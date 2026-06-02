@@ -24,44 +24,44 @@ feedback a serious reviewer would give, calibrated to how finished the draft is.
   intake ─▶ 5 specialists ─▶ rebuttal round ─▶ moderator ─▶ editor letter + scorecard
 ```
 
-This is pure reasoning — no scripts. **You are one Claude playing all six roles
-in sequence within a single turn** — the "5 specialists" and "different
-providers" framing is conceptual, not a multi-agent runtime. The per-phase JSON
-is internal scratch; by default you deliver only the **review letter** and the
-**scorecard table**. The full pipeline, the five specialist lenses, the
-score/priority calibration, the draft-level tones, the verdict thresholds, and
-every verbatim role prompt are in `references/review.md` — **load it before
-reviewing.**
+This is pure reasoning — no scripts. **You are one Claude carrying out all six
+stages in sequence within a single turn** — the "panel of reviewers" is a way of
+thinking, not a multi-agent runtime. Your working notes stay internal; by default
+you deliver only the **review letter** and the **scorecard table**. The full
+method — the five reviewing lenses, the scoring and priority discipline, the
+draft-stage calibration, and the recommendation logic — is in
+`references/review.md`. **Load it before reviewing.**
 
 ## How to run it
 
-1. **Get the draft** and ask (or infer) the **draft level**:
+1. **Get the draft** and ask (or infer) the **draft stage**:
    `final | working | sketch | student`. This matters a lot — it sets how strict
-   the panel is and where the Accept/Revise/Reject lines fall. When unsure, ask;
+   to be and where the Accept/Revise/Reject lines fall. When unsure, ask;
    reviewing a student essay like a journal submission is the #1 failure mode.
-2. **Run the six phases** from `references/review.md`:
-   - **Intake** → triage the draft (type, field, thesis, sections, gaps).
-   - **Specialist panel ×5** → each critiques from ONE lens, scores 0–10, lists
-     issues anchored to quotes. Apply the score + priority calibration exactly —
-     a competent draft scores 7–8, "high" priority is only for real blockers.
-   - **Rebuttal round** → each specialist concurs / dissents / nuances the
-     others. Genuinely push back on weak issues; don't rubber-stamp.
-   - **Moderator** → merge both rounds, dedupe, surface contradictions, rank the
-     top issues.
-   - **Chief editor** → write the review letter (Verdict / Strengths / Issues to
-     Fix / Optional Improvements), length-scaled to the draft.
-   - **Scorecard** → dimension scores, overall mean, verdict by the literal
-     rubric for that draft level.
-3. **Deliver**: the review letter first, then the scorecard table, then the raw
-   panel detail only if asked.
+2. **Run the six stages** from `references/review.md`:
+   - **Triage** → form a shared picture of the draft (type, field, thesis,
+     sections, gaps).
+   - **Five-lens review** → critique from each lens in turn, score 0–10, list
+     issues anchored to quotes. Apply the scoring + priority discipline — a
+     competent draft scores 7–8, "high" priority is only for real blockers.
+   - **Cross-examination** → weigh the lenses against each other; genuinely push
+     back on weak issues rather than rubber-stamping.
+   - **Reconcile** → merge into one ranked issue list, surface real
+     disagreements.
+   - **Letter** → write it (Verdict / Strengths / Issues to Fix / Optional
+     Improvements), sized to the draft.
+   - **Score** → lens scores, overall average, recommendation calibrated to the
+     draft stage.
+3. **Deliver**: the review letter first, then the scorecard table, then the
+   internal working notes only if asked.
 
 ## Why the structure matters
 
-The value isn't one model's hot take — it's five independent lenses that then
-*argue with each other* before a moderator reconciles them. The rebuttal round
-is what kills plausible-but-wrong issues and sharpens the real ones, and the
-draft-level calibration is what keeps the verdict fair. Don't collapse it into a
-single pass; the separation is the product.
+The value isn't one hot take — it's five independent lenses that then *get weighed
+against each other* before being reconciled. The cross-examination is what kills
+plausible-but-wrong issues and sharpens the real ones, and the draft-stage
+calibration is what keeps the verdict fair. Don't collapse it into a single pass;
+the separation is what makes the review trustworthy.
 
 ## Honesty contract
 
