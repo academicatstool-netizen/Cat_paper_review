@@ -20,7 +20,7 @@
 
 ---
 
-> ### 🪶 这是 [**AcademiCats**](https://academicats.com) 的**开源轻量版**
+> ### 🪶 这是 [**AcademiCats**](https://academicats.com) 的**开源轻量版**（正式版现处公测，免费试用）
 > 完整产品在 **[academicats.com](https://academicats.com)** —— 一个 AI 研究工作台，带你从*找文献*一路走到*读、写、自审*。本 skill 是其中评审工作流的一块免费、自包含、可在你自己的 Claude 上运行的切片。
 
 ---
@@ -118,6 +118,8 @@ git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/ski
 
 ### 想要完整的研究工作流？
 **→ [academicats.com](https://academicats.com) ←**
+
+*🚀 正式版现处**公测阶段** —— 现在免费试用。*
 
 <br>
 
