@@ -39,16 +39,7 @@
 
 > *"Peer-review my draft — it's a working draft of a short research proposal. Is it ready?"*
 
-First it shows a quick **review setup** — same on any model:
-
-> 🧪 **Review setup** — confirm or tweak, then I'll review it:
-> 1. **Draft stage** — working
-> 2. **Focus** — all five lenses
-> 3. **Language** — English
->
-> Reply with any changes, or just say **go**.
-
-Then the result is **always the same shape** — a referee letter, a scorecard, then a one-line summary — no matter which model runs the skill:
+You said it's a working draft — so it reviews straight away (no forms; it notes the stage it used so you can correct it). The result is **always the same shape** — a referee letter, a scorecard, then a one-line summary — no matter which model runs the skill:
 
 > # Verdict
 > A clear, relevant proposal — but as a working draft it's a promising skeleton, not yet a viable plan. The key fix: it rests on *lines of code per hour*, a discredited productivity proxy that would invalidate the result no matter how the experiment runs.

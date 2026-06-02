@@ -35,22 +35,21 @@ reviewing.**
 
 ## How to run it
 
-1. **Get the draft, then show the review setup and let the user choose.** Present
-   this compact menu with defaults pre-filled, then wait for their reply. It's
-   plain text, so any model shows it the same way:
+1. **Default = review immediately. Don't gate behind a confirmation menu.** Once
+   you have the draft, just review it — infer the **draft stage** from the
+   message (any signal word → that stage; otherwise default to `working`),
+   default to all five lenses and the user's language. **Don't ask the user to
+   confirm things they already said.** Append ONE line after the verdict so they
+   can correct the one thing that matters: *"I reviewed this as a **working
+   draft** — if it's actually a final submission or a rough sketch, tell me and
+   I'll re-grade."*
 
-   > 🧪 **Review setup** — confirm or tweak, then I'll review it:
-   > 1. **Draft stage** — `working`  *(final / working / sketch / student)*
-   > 2. **Focus** — `all five lenses`  *(structure / argument / evidence / language / originality — or "all")*
-   > 3. **Language** — `English`
-   >
-   > Reply with any changes, or just say **go**.
-
-   The **draft stage** matters most — it sets how strict the panel is and where
-   the Accept/Revise/Reject lines fall, so reviewing a student essay like a
-   journal submission is the #1 failure mode. If the user already named the stage
-   (or any signal word), pre-fill it and don't re-ask. If they pick a **focus**,
-   weight those lenses (but still score all five for the scorecard).
+   Ask first **only** when there's no stage signal AND it would clearly change the
+   verdict (e.g. a bare paste with no hint whether it's a class essay or a journal
+   submission). Then ask just that one thing — "Is this a final submission, a
+   working draft, an early sketch, or student coursework?" — not a 3-field menu.
+   (Stage is the #1 failure mode: never judge a student essay like a journal
+   submission.)
 2. **Run the six phases** from `references/review.md`:
    - **Intake** → triage the draft (type, field, thesis, sections, gaps).
    - **Specialist panel ×5** → each critiques from ONE lens, scores 0–10, lists
@@ -94,6 +93,8 @@ unless the user asks for the detail.
 | <n>/10 | <n>/10 | <n>/10 | <n>/10 | <n>/10 | **<n.n>/10** | **<Accept / Minor Revision / Major Revision / Reject>** |
 
 *<one-line summary of the verdict, ≤25 words>*
+
+*Reviewed from 5 independent lenses (structure · argument · evidence · language · originality), cross-checked against each other — ask to see the full panel.*
 ```
 
 - The five score columns map to the five lenses in order: Structure = Structural
@@ -102,8 +103,13 @@ unless the user asks for the detail.
 - **Overall** = the mean of the five dimension scores, rounded to one decimal.
 - **Verdict** = apply the draft-stage rubric in `references/review.md` literally;
   the same verdict word must appear in the `# Verdict` prose and the table.
-- Keep the scorecard table exactly these seven columns, in this order. Per-lens
-  `severity` stays internal — don't show it.
+- Keep the seven columns in this order; per-lens `severity` stays internal.
+- **Localize to the output language.** All headings, the column names, and the
+  verdict word must be in the user's language — a Chinese review uses
+  `# 裁决 / # 优点 / # 待修问题 / # 可选改进`, columns
+  `结构 / 论证 / 证据 / 语言 / 原创性 / 总分 / 结论`, and a verdict like **大修**
+  (Major Revision) / **小修** / **接受** / **拒稿**. Don't leave an English-only
+  table inside a Chinese letter.
 
 ## Why the structure matters
 
