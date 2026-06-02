@@ -59,11 +59,12 @@
 ## 🚀 60 秒上手
 
 ```bash
-# 把 skill 放到 Claude Code 能发现的位置 —— 无依赖、零配置
-cp -r Cat_paper_review ~/.claude/skills/paper-review
+# 安装到 Claude Code 的 skills 目录 —— 无依赖、零配置
+mkdir -p ~/.claude/skills
+git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/skills/paper-review
 ```
 
-然后直接跟 Claude 说：*"帮我审这份草稿，是一份在写的研究计划…"* 或 *"把这篇 essay 当最终稿来同行评审 —— 能投了吗？"* skill 会**自动触发**，全程跑在你自己的 Claude 上。
+重启 Claude Code，然后直接跟它说 —— *"帮我审这份草稿，是一份在写的研究计划…"* 或 *"把这篇文章当最终稿来同行评审 —— 能投了吗？"* skill 会**自动触发**，全程跑在你自己的 Claude 上。
 
 <br>
 
@@ -71,7 +72,7 @@ cp -r Cat_paper_review ~/.claude/skills/paper-review
 
 六个阶段 —— **接收 → 5 位专家 → 反驳轮 → 仲裁 → 主编信 → 评分卡** —— 提炼自驱动完整产品的同一套评审团。
 
-|  | Paper Review（本 skill） | [AcademiCats 完整产品 →](https://academicats.com) |
+|  | 模拟同行评审（本 skill） | [AcademiCats 完整产品 →](https://academicats.com) |
 |---|:---:|:---:|
 | 六阶段评审团 + 评分裁决 | ✅ | ✅ |
 | 按稿件阶段校准 | ✅ | ✅ |

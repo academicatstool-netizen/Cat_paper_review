@@ -59,11 +59,12 @@ A real excerpt of the letter it returns:
 ## 🚀 Get started in 60 seconds
 
 ```bash
-# drop this skill where Claude Code can find it — no dependencies, no setup
-cp -r Cat_paper_review ~/.claude/skills/paper-review
+# install into Claude Code's skills folder — no dependencies, no setup
+mkdir -p ~/.claude/skills
+git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/skills/paper-review
 ```
 
-Then just talk to Claude: *"review my draft, it's a working draft of a research proposal …"* or *"peer-review this essay as a final submission — is it ready?"* The skill triggers itself and runs entirely on your own Claude.
+Restart Claude Code, then just talk to it — *"review my draft, it's a working draft of a research proposal …"* or *"peer-review this essay as a final submission — is it ready?"* The skill triggers itself and runs entirely on your own Claude.
 
 <br>
 
