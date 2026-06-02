@@ -55,6 +55,44 @@ reviewing.**
 3. **Deliver**: the review letter first, then the scorecard table, then the raw
    panel detail only if asked.
 
+## Output format (fixed)
+
+Deliver **exactly this shape** every time, so the result is consistent no matter
+which model runs the skill. Show nothing else (no per-phase JSON, no panel notes)
+unless the user asks for the detail.
+
+```
+# Verdict
+<2–4 sentences: what the draft is, how well it works, the single most important fix. Tone honest with the score.>
+
+# Strengths
+- <≤4 bullets, one sentence each>
+
+# Issues to Fix
+**<short heading>** — <the problem (quote the draft where useful)>; <the concrete fix>.
+… (usually 2–5 items, never more than 6)
+
+# Optional Improvements
+- <≤3 bullets — OMIT this whole section if there are none>
+
+## Scorecard
+
+| Structure | Argument | Evidence | Language | Originality | Overall | Verdict |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| <n>/10 | <n>/10 | <n>/10 | <n>/10 | <n>/10 | **<n.n>/10** | **<Accept / Minor Revision / Major Revision / Reject>** |
+
+*<one-line summary of the verdict, ≤25 words>*
+```
+
+- The five score columns map to the five lenses in order: Structure = Structural
+  Editor, Argument = Argument Analyst, Evidence = Evidence Auditor, Language =
+  Language & Style Editor, Originality = Originality & Contribution Critic.
+- **Overall** = the mean of the five dimension scores, rounded to one decimal.
+- **Verdict** = apply the draft-stage rubric in `references/review.md` literally;
+  the same verdict word must appear in the `# Verdict` prose and the table.
+- Keep the scorecard table exactly these seven columns, in this order. Per-lens
+  `severity` stays internal — don't show it.
+
 ## Why the structure matters
 
 The value isn't one model's hot take — it's five independent lenses that then
