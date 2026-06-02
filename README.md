@@ -6,11 +6,9 @@
 
 <br>
 
-# 🐱 Paper Review · 模拟同行评审
+# 🐱 Paper Review
 
 **Run your own draft through a six-phase simulated peer-review panel and get back a referee letter plus a scored verdict — calibrated to how finished your draft really is.**
-
-让你的草稿走完六阶段模拟同行评审，得到一封评审意见信 + 评分裁决。**按你的稿件阶段精准校准。**
 
 <br>
 
@@ -24,8 +22,6 @@
 
 > ### 🪶 This is the **lite, open-source edition** of [**AcademiCats**](https://academicats.com)
 > The full product at **[academicats.com](https://academicats.com)** is an AI research workbench that takes you from *finding* papers through *reading, writing, and self-review*. This skill is a free, self-contained slice of the review workflow you can run on your own Claude.
->
-> 这是 [**AcademiCats**](https://academicats.com) 的**开源轻量版**。完整产品在 **academicats.com**——一个从找文献到读、写、自审的 AI 研究工作台。
 
 ---
 

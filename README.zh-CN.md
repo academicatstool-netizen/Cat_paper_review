@@ -6,7 +6,7 @@
 
 <br>
 
-# 🐱 Paper Review · 模拟同行评审
+# 🐱 模拟同行评审
 
 **让你自己的草稿走完六阶段模拟同行评审，得到一封评审意见信 + 一份评分裁决 —— 并按你的稿件实际完成度精准校准。**
 
@@ -41,18 +41,18 @@
 
 它返回的评审信真实节选：
 
-> **# Verdict（裁决）**
-> This is a short proposal asking a real and relevant question — does background music affect coding productivity — with the correct two-group design instinct and clean prose. As a working draft it is a promising skeleton rather than a viable plan, and the single most important thing to fix is the outcome measure: the study currently rests on *lines of code per hour*, a discredited productivity proxy that would invalidate the result no matter how the experiment runs.
+> **# 裁决**
+> 这是一份针对真实且有价值问题的短计划——背景音乐是否影响编程效率——有正确的两组对照设计直觉、文笔清晰。但作为在写稿，它还只是个有潜力的骨架而非可行方案；最需要修的一点是结果度量：研究目前依赖*每小时代码行数*，这是一个已被学界否定的生产力替代指标，无论实验怎么跑都会让结论失效。
 >
-> **# Issues to Fix（待修问题）**
-> **Replace the sole productivity metric.** "每小时写多少行代码"奖励冗长、忽视正确性…… 增加一个有效指标（任务完成度、测试通过数、用时）。
-> **Ground the proposal in prior work.** 全文没有任何引用…… 增加一段 3–5 篇参考文献的相关工作。
+> **# 待修问题**
+> **替换唯一的生产力指标。** "每小时写多少行代码"奖励冗长、忽视正确性…… 增加一个有效指标（任务完成度、测试通过数、用时）。
+> **为计划补上既有研究。** 全文没有任何引用…… 增加一段 3–5 篇参考文献的相关工作。
 
 ……随后附上一份评分卡：
 
 | 结构 | 论证 | 证据 | 语言 | 原创性 | **总分** | **裁决** |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 6 | 4 | 3 | 6 | 5 | **4.8 / 10** | **大修（Major Revision）** |
+| 6 | 4 | 3 | 6 | 5 | **4.8 / 10** | **大修** |
 
 <br>
 
