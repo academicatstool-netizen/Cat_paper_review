@@ -35,10 +35,22 @@ reviewing.**
 
 ## How to run it
 
-1. **Get the draft** and ask (or infer) the **draft level**:
-   `final | working | sketch | student`. This matters a lot — it sets how strict
-   the panel is and where the Accept/Revise/Reject lines fall. When unsure, ask;
-   reviewing a student essay like a journal submission is the #1 failure mode.
+1. **Get the draft, then show the review setup and let the user choose.** Present
+   this compact menu with defaults pre-filled, then wait for their reply. It's
+   plain text, so any model shows it the same way:
+
+   > 🧪 **Review setup** — confirm or tweak, then I'll review it:
+   > 1. **Draft stage** — `working`  *(final / working / sketch / student)*
+   > 2. **Focus** — `all five lenses`  *(structure / argument / evidence / language / originality — or "all")*
+   > 3. **Language** — `English`
+   >
+   > Reply with any changes, or just say **go**.
+
+   The **draft stage** matters most — it sets how strict the panel is and where
+   the Accept/Revise/Reject lines fall, so reviewing a student essay like a
+   journal submission is the #1 failure mode. If the user already named the stage
+   (or any signal word), pre-fill it and don't re-ask. If they pick a **focus**,
+   weight those lenses (but still score all five for the scorecard).
 2. **Run the six phases** from `references/review.md`:
    - **Intake** → triage the draft (type, field, thesis, sections, gaps).
    - **Specialist panel ×5** → each critiques from ONE lens, scores 0–10, lists
