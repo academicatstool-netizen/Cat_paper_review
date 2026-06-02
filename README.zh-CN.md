@@ -89,6 +89,7 @@ git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/ski
 
 |  | 模拟同行评审（本 skill） | [AcademiCats 完整产品 →](https://academicats.com) |
 |---|:---:|:---:|
+| ⚡ **速度** | 几分钟（单个 Claude 一遍生成） | 更快 —— 流式 + 并行评审团 |
 | 六阶段评审团 + 评分裁决 | ✅ | ✅ |
 | 按稿件阶段校准 | ✅ | ✅ |
 | 自动找并读它需要的文献 | 自备文献 | ✅ 端到端 |

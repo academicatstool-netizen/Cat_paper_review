@@ -89,6 +89,7 @@ Six phases — **intake → 5 specialists → rebuttal round → moderator → e
 
 |  | Paper Review (this skill) | [AcademiCats full product →](https://academicats.com) |
 |---|:---:|:---:|
+| ⚡ **Speed** | minutes (one Claude pass) | faster — streamed, parallel panel |
 | Six-phase panel + scored verdict | ✅ | ✅ |
 | Stage-aware calibration | ✅ | ✅ |
 | Find & read the literature it asks for | bring your own | ✅ end-to-end |
