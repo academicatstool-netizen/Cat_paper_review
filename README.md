@@ -79,6 +79,8 @@ git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/ski
 
 Restart Claude Code, then just talk to it — *"review my draft, it's a working draft of a research proposal …"* or *"peer-review this essay as a final submission — is it ready?"* The skill triggers itself and runs entirely on your own Claude.
 
+**On Claude web or desktop instead?** Download **[`paper-review.skill`](paper-review.skill)** and upload it under **Settings → Capabilities → Skills** — then just ask in any chat.
+
 <br>
 
 ## 💙 What's inside

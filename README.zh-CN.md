@@ -79,6 +79,8 @@ git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/ski
 
 重启 Claude Code，然后直接跟它说 —— *"帮我审这份草稿，是一份在写的研究计划…"* 或 *"把这篇文章当最终稿来同行评审 —— 能投了吗？"* skill 会**自动触发**，全程跑在你自己的 Claude 上。
 
+**用网页版 / 桌面版 Claude？** 下载 **[`paper-review.skill`](paper-review.skill)**，在 **Settings → Capabilities → Skills** 里上传，然后在任意对话里直接问即可。
+
 <br>
 
 ## 💙 内部构造
