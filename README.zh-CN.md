@@ -2,7 +2,7 @@
 
 [English](README.md) · **中文**
 
-<img src="assets/cover.png" alt="AcademiCats · Paper Review" width="100%">
+<img src="assets/cover-zh.png" alt="AcademiCats · Paper Review" width="100%">
 
 <br>
 
@@ -91,6 +91,8 @@ git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/ski
 - 🔍 [论文检索](https://github.com/jy1529098645-gif/Cat_paper_search) —— 找文献、读文献
 - ✍️ [文献写作台](https://github.com/jy1529098645-gif/Cat_synthesis_lab) —— 据你的文献写出有据成稿
 - 🧪 **模拟同行评审** *（你在这里）* —— 对你自己的草稿做同行评审
+
+**一次装齐三个** —— clone 任意一个仓库后运行 `bash install.sh`。
 
 ## 🙋 常见问题
 

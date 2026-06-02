@@ -92,6 +92,8 @@ Three open skills that chain into one research workflow — install any or all:
 - ✍️ [Synthesis Lab](https://github.com/jy1529098645-gif/Cat_synthesis_lab) — write grounded papers from your sources
 - 🧪 **Paper Review** *(you are here)* — peer-review your own draft
 
+**Install all three at once** — clone any one repo, then run `bash install.sh`.
+
 ## 🙋 FAQ
 
 - **It didn't trigger?** Restart Claude Code after installing, and phrase your message as a task — *"review my draft …"*.
