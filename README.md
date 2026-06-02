@@ -1,5 +1,7 @@
 <div align="center">
 
+**English** · [中文](README.zh-CN.md)
+
 <img src="assets/cover.png" alt="AcademiCats · Paper Review" width="100%">
 
 <br>
