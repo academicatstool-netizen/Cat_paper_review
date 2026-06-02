@@ -39,20 +39,24 @@
 
 > *"Peer-review my draft — it's a working draft of a short research proposal. Is it ready?"*
 
-A real excerpt of the letter it returns:
+The result is **always the same shape** — a referee letter, a scorecard, then a one-line summary — no matter which model runs the skill:
 
-> **# Verdict**
-> This is a short proposal asking a real and relevant question — does background music affect coding productivity — with the correct two-group design instinct and clean prose. As a working draft it is a promising skeleton rather than a viable plan, and the single most important thing to fix is the outcome measure: the study currently rests on *lines of code per hour*, a discredited productivity proxy that would invalidate the result no matter how the experiment runs.
+> # Verdict
+> A clear, relevant proposal — but as a working draft it's a promising skeleton, not yet a viable plan. The key fix: it rests on *lines of code per hour*, a discredited productivity proxy that would invalidate the result no matter how the experiment runs.
 >
-> **# Issues to Fix**
-> **Replace the sole productivity metric.** "How many lines of code they write in one hour" rewards verbosity and ignores correctness… add a validated outcome (task completion, tests passed, time-on-task).
-> **Ground the proposal in prior work.** There are no citations anywhere… add a short related-work paragraph with 3–5 references.
+> # Strengths
+> - The two-group design is the right shape for the question.
+> - Clear, readable prose.
+>
+> # Issues to Fix
+> **Replace the sole metric** — lines-of-code rewards verbosity and ignores correctness; add a validated outcome (task completion, tests passed, time-on-task).
+> **Ground it in prior work** — there are no citations anywhere; add a short related-work paragraph.
 
-…followed by a scorecard:
-
-| Structure | Argument | Evidence | Language | Originality | **Overall** | **Verdict** |
+| Structure | Argument | Evidence | Language | Originality | Overall | Verdict |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 6 | 4 | 3 | 6 | 5 | **4.8 / 10** | **Major Revision** |
+| 6 | 4 | 3 | 6 | 5 | **4.8/10** | **Major Revision** |
+
+> *A relevant question undermined by a confirmation-seeking design; not ready until the metric and controls are fixed.*
 
 <br>
 
@@ -79,6 +83,21 @@ Six phases — **intake → 5 specialists → rebuttal round → moderator → e
 | Find & read the literature it asks for | bring your own | ✅ end-to-end |
 | Saved drafts & revision history | — | ✅ |
 | Polished web & mobile app | — | ✅ |
+
+## 🐱 The AcademiCats skill family
+
+Three open skills that chain into one research workflow — install any or all:
+
+- 🔍 [Paper Search](https://github.com/jy1529098645-gif/Cat_paper_search) — find & read papers
+- ✍️ [Synthesis Lab](https://github.com/jy1529098645-gif/Cat_synthesis_lab) — write grounded papers from your sources
+- 🧪 **Paper Review** *(you are here)* — peer-review your own draft
+
+## 🙋 FAQ
+
+- **It didn't trigger?** Restart Claude Code after installing, and phrase your message as a task — *"review my draft …"*.
+- **Tell it the draft stage.** Say it's a *"working draft"*, *"final"*, *"rough sketch"*, or *"student essay"* so it grades you fairly — a class essay shouldn't be judged like a journal submission.
+- **Which model?** Any model works; quality is best on Claude Sonnet or above.
+- **Private & free?** It runs on your own Claude — no account, nothing sent to us.
 
 <div align="center">
 <br>
