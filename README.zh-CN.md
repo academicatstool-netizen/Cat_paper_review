@@ -63,17 +63,22 @@
 
 <br>
 
-## 🚀 60 秒上手
+## 🚀 开始使用 —— 按你的平台选一种
 
+按你常用的 AI 选一种，每种不到一分钟：
+
+**🖥️ Claude Code** —— 本地运行、自动触发
 ```bash
-# 安装到 Claude Code 的 skills 目录 —— 无依赖、零配置
 mkdir -p ~/.claude/skills
 git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/skills/paper-review
 ```
+重启 Claude Code，然后直接说 —— *"帮我审这份草稿，是一份在写的研究计划…"*
 
-重启 Claude Code，然后直接跟它说 —— *"帮我审这份草稿，是一份在写的研究计划…"* 或 *"把这篇文章当最终稿来同行评审 —— 能投了吗？"* skill 会**自动触发**，全程跑在你自己的 Claude 上。
+**🌐 Claude 网页 / 桌面版** —— 下载 **[`paper-review.skill`](paper-review.skill)**，在 **Settings → Capabilities → Skills** 里上传，然后任意对话直接问。
 
-**用网页版 / 桌面版 Claude？** 下载 **[`paper-review.skill`](paper-review.skill)**，在 **Settings → Capabilities → Skills** 里上传，然后在任意对话里直接问即可。
+**🤖 ChatGPT** —— 打开 **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)**，贴进**自定义 GPT** 的 *Instructions*（或作为第一条消息发送），然后把草稿贴给它。
+
+**💬 DeepSeek / 任意其他模型** —— 把 **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** 作为**系统提示**（或第一条消息）粘贴，然后把草稿贴给它。
 
 <br>
 
@@ -91,15 +96,6 @@ git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/ski
 | 草稿保存与修订历史 | — | ✅ |
 | 精致的网页与移动端 | — | ✅ |
 
-## 🌐 在 ChatGPT、DeepSeek 或任意模型上使用
-
-本 skill 在 **Claude**（Claude Code 与 claude.ai）上会自动加载。想在 **ChatGPT、DeepSeek 或任何其他够强的大模型**上跑同一套能力，用 **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** 里的自包含提示词——它已把全部内容内联，无需加载任何文件，也不含 Claude 专有假设。
-
-- **ChatGPT** —— 贴进**自定义 GPT** 的 *Instructions*，或直接作为普通对话的第一条消息发送。
-- **DeepSeek 及其他** —— 作为**系统提示**，或对话的第一条消息粘贴。
-
-然后在同一对话里描述你的任务即可。用前沿模型（Claude Sonnet/Opus、GPT‑4o/o 系列、DeepSeek‑V3/R1）效果最好。
-
 ## 🐱 AcademiCats 技能家族
 
 三个开源 skill，串起一条完整的研究工作流——按需安装其一或全部：
@@ -112,10 +108,11 @@ git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/ski
 
 ## 🙋 常见问题
 
+- **这些文件都是干嘛的？** 上面几种方式用其一即可——git clone（Claude Code）、`.skill` 文件（Claude 网页/桌面）、或 `PORTABLE_PROMPT.md`（ChatGPT/DeepSeek）。`SKILL.md`、`references/` 是助手自动加载的内部文件，无需手动打开。
 - **没触发？** 安装后重启 Claude Code，并把话说成一个任务 —— *"帮我审这份草稿…"*。
 - **记得说明稿件阶段。** 告诉它是*"在写稿"、"终稿"、"草图"*还是*"学生作业"*，它才会公平打分——课程作业不该用期刊投稿的标准来评。
-- **用哪个模型？** 任何模型都能跑；用 Claude Sonnet 及以上效果最好。
-- **隐私 & 免费？** 全程跑在你自己的 Claude 上——无需账号、不向我们回传任何东西。
+- **用哪个模型？** 任何够强的模型都行——Claude Sonnet/Opus、GPT‑4o/o 系列、DeepSeek‑V3/R1 效果最好。
+- **隐私 & 免费？** 全程跑在你自己的 AI 上——无需账号、不向我们回传任何东西。
 
 <div align="center">
 <br>

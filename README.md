@@ -63,17 +63,22 @@ You said it's a working draft — so it reviews straight away (no forms; it note
 
 <br>
 
-## 🚀 Get started in 60 seconds
+## 🚀 Get started — pick your platform
 
+Pick whichever AI you use; each setup takes under a minute.
+
+**🖥️ Claude Code** — runs locally, triggers itself
 ```bash
-# install into Claude Code's skills folder — no dependencies, no setup
 mkdir -p ~/.claude/skills
 git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/skills/paper-review
 ```
+Restart Claude Code, then just ask — *"review my draft, it's a working draft of a research proposal …"*
 
-Restart Claude Code, then just talk to it — *"review my draft, it's a working draft of a research proposal …"* or *"peer-review this essay as a final submission — is it ready?"* The skill triggers itself and runs entirely on your own Claude.
+**🌐 Claude (web / desktop app)** — download **[`paper-review.skill`](paper-review.skill)**, then upload it under **Settings → Capabilities → Skills**. Ask in any chat.
 
-**On Claude web or desktop instead?** Download **[`paper-review.skill`](paper-review.skill)** and upload it under **Settings → Capabilities → Skills** — then just ask in any chat.
+**🤖 ChatGPT** — open **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** and paste it into a **Custom GPT**'s *Instructions* (or just send it as your first message). Then paste your draft.
+
+**💬 DeepSeek / any other model** — paste **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** as the **system prompt** (or first message). Then paste your draft.
 
 <br>
 
@@ -91,15 +96,6 @@ Six phases — **intake → 5 lenses → rebuttal round → moderator → editor
 | Saved drafts & revision history | — | ✅ |
 | Polished web & mobile app | — | ✅ |
 
-## 🌐 Use it on ChatGPT, DeepSeek, or any model
-
-This skill loads automatically on **Claude** (Claude Code & claude.ai). To run the same thing on **ChatGPT, DeepSeek, or any other capable LLM**, use the self-contained prompt in **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** — it inlines everything, with no files to load and no Claude-specific assumptions.
-
-- **ChatGPT** — paste it into a **Custom GPT**'s *Instructions*, or simply send it as your first message in a normal chat.
-- **DeepSeek & others** — paste it as the **system prompt**, or as the first message of the conversation.
-
-Then just describe your task in the same chat. Quality is best on frontier models (Claude Sonnet/Opus, GPT‑4o/o‑series, DeepSeek‑V3/R1).
-
 ## 🐱 The AcademiCats skill family
 
 Three open skills that chain into one research workflow — install any or all:
@@ -112,10 +108,11 @@ Three open skills that chain into one research workflow — install any or all:
 
 ## 🙋 FAQ
 
+- **What are all these files?** Use just one path above — a git clone (Claude Code), the `.skill` file (Claude web/desktop), or `PORTABLE_PROMPT.md` (ChatGPT/DeepSeek). `SKILL.md` and `references/` are internals your assistant loads for you — no need to open them.
 - **It didn't trigger?** Restart Claude Code after installing, and phrase your message as a task — *"review my draft …"*.
 - **Tell it the draft stage.** Say it's a *"working draft"*, *"final"*, *"rough sketch"*, or *"student essay"* so it grades you fairly — a class essay shouldn't be judged like a journal submission.
-- **Which model?** Any model works; quality is best on Claude Sonnet or above.
-- **Private & free?** It runs on your own Claude — no account, nothing sent to us.
+- **Which model?** Any strong model works — Claude Sonnet/Opus, GPT‑4o/o‑series, or DeepSeek‑V3/R1 give the best results.
+- **Private & free?** It runs on your own AI — no account, nothing sent to us.
 
 <div align="center">
 <br>
