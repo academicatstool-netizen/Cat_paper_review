@@ -103,7 +103,11 @@ each lens.
   same as importance (NIH scores Significance and Innovation as distinct axes).
   Is the gap/problem well motivated? Is the contribution positioned against prior
   work? Would researchers in this field actually use or cite it? For a proposal,
-  this is the NIH *Significance + Innovation* judgement.
+  this is the NIH *Significance + Innovation* judgement. **Score the contribution
+  THIS draft actually demonstrates, not the importance of the topic** — a timely
+  subject executed with no real contribution (an unsystematic "review", a study
+  whose design can't answer its own question) is a LOW Significance, not a high
+  one. Don't let topic relevance inflate the score.
 
 - **Rigor & Validity** *(column: Rigor)* — soundness of method and inference, the
   single most important axis for empirical work. **Apply the type-matched
@@ -232,6 +236,14 @@ overall  < Major_threshold                                   → Reject
 ```
 The Accept rule deliberately tolerates ONE high-priority issue — a single sharp,
 fixable blocker is the typical state of a good working draft.
+
+**Boundary tie-break.** The overall mean is sensitive near a threshold (a 4.0
+sits exactly on the Major/Reject line, where one lens's rounding flips the
+verdict). When the mean lands within **0.2** of a threshold, don't let rounding
+decide it — break the tie on the count of genuine, unresolved high-priority
+blockers from the moderator: **2+ blockers → take the LOWER verdict; 0–1 → the
+higher.** Say the call plainly in the Verdict prose so the author sees why it
+landed where it did.
 
 ---
 
@@ -386,6 +398,13 @@ CRITICAL:
   - Nuanced issues = keep but edit the suggestion to capture the nuance.
   - Issues added in rebuttal = include if grounded, priority by how many peers would agree.
   - Genuine contradictions = note explicitly (don't hide them).
+  - GROUP related reporting-standard gaps into ONE issue. If several lenses each
+    flag a missing element of the SAME standard (e.g. "no sampling rationale" +
+    "no analysis method" + "no reflexivity" for COREQ; "no search strategy" + "no
+    inclusion criteria" + "no risk-of-bias" for PRISMA), merge them into a single
+    "incomplete <standard> reporting" issue with the sub-points listed — the
+    author fixes them as a set. Don't pad the issue list with 4–5 parallel
+    "missing X" entries; that also distorts the high-priority count.
 
 PAPER TYPE: {intake.paper_type}  ·  STANDARD: {intake.applied_standard}
 INTEGRITY CHECKS THAT MAY APPLY: {intake.integrity_relevant}
