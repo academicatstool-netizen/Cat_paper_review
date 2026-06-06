@@ -1,9 +1,10 @@
 ---
 name: paper-review
 description: >-
-  Simulate a full academic peer-review panel on a draft — run a manuscript
-  through five specialist reviewers (structure, argument, evidence, language,
-  originality), a rebuttal round, a moderator, and a chief editor, then deliver a
+  Simulate a full academic peer-review panel on a draft — examine a manuscript
+  through five independent review lenses (structure, argument, evidence,
+  language, originality), a rebuttal round, a moderator, and a chief editor,
+  then deliver a
   referee letter plus a scored verdict (Accept / Minor / Major Revision /
   Reject). Use this skill WHENEVER the user wants critical feedback on their own
   academic writing: "review my paper / essay / thesis chapter", "give me peer
@@ -114,7 +115,7 @@ unless the user asks for the detail.
 ## Why the structure matters
 
 The value isn't one model's hot take — it's five independent lenses that then
-*argue with each other* before a moderator reconciles them. The rebuttal round
+*challenge each other* before a moderator reconciles them. The rebuttal round
 is what kills plausible-but-wrong issues and sharpens the real ones, and the
 draft-level calibration is what keeps the verdict fair. Don't collapse it into a
 single pass; the separation is the product.

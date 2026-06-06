@@ -27,7 +27,7 @@
 
 ## ✨ What it does
 
-🧪 **A whole panel, not one opinion** — five specialist reviewers (structure, argument, evidence, language, originality) each critique from their own lens, then **argue with each other** in a rebuttal round before a moderator reconciles them. That cross-examination is what kills plausible-but-wrong feedback and sharpens what's real.
+🧪 **A whole panel's scrutiny, from one model** — your draft is examined through five independent review lenses (structure, argument, evidence, language, originality) that then **challenge each other** in a rebuttal round before a moderator reconciles them. That cross-examination is what kills plausible-but-wrong feedback and sharpens what's real.
 
 📊 **A verdict with a number** — you get a referee letter (verdict, strengths, issues to fix, optional improvements) *and* a scorecard: each dimension scored 0–10, an overall, and a recommendation — **Accept / Minor / Major Revision / Reject**.
 
@@ -76,7 +76,7 @@ Restart Claude Code, then just talk to it — *"review my draft, it's a working 
 
 ## 💙 What's inside
 
-Six phases — **intake → 5 specialists → rebuttal round → moderator → editor letter → scorecard** — distilled from the same panel that powers the full product.
+Six phases — **intake → 5 lenses → rebuttal round → moderator → editor letter → scorecard** — distilled from the same review method behind the full product.
 
 |  | Paper Review (this skill) | [AcademiCats full product →](https://academicats.com) |
 |---|:---:|:---:|
