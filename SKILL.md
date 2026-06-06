@@ -2,9 +2,10 @@
 name: paper-review
 description: >-
   Simulate a full academic peer-review panel on a draft — examine a manuscript
-  through five independent review lenses (structure, argument, evidence,
-  language, originality), a rebuttal round, a moderator, and a chief editor,
-  then deliver a
+  through five independent review lenses (significance, rigor & validity,
+  evidence, argument, clarity), with the methodological criteria adapted to the
+  paper type (CONSORT / STROBE / PRISMA / COREQ / Toulmin), a rebuttal round, a
+  moderator, and a chief editor, then deliver a
   referee letter plus a scored verdict (Accept / Minor / Major Revision /
   Reject). Use this skill WHENEVER the user wants critical feedback on their own
   academic writing: "review my paper / essay / thesis chapter", "give me peer
@@ -22,17 +23,18 @@ returns a structured referee report plus a scorecard verdict — the kind of
 feedback a serious reviewer would give, calibrated to how finished the draft is.
 
 ```
-  intake ─▶ 5 specialists ─▶ rebuttal round ─▶ moderator ─▶ editor letter + scorecard
+  intake (+type) ─▶ 5 lenses ─▶ rebuttal round ─▶ moderator ─▶ editor letter + scorecard
 ```
 
 This is pure reasoning — no scripts. **You are one Claude playing all six roles
-in sequence within a single turn** — the "5 specialists" and "different
-providers" framing is conceptual, not a multi-agent runtime. The per-phase JSON
-is internal scratch; by default you deliver only the **review letter** and the
-**scorecard table**. The full pipeline, the five specialist lenses, the
-score/priority calibration, the draft-level tones, the verdict thresholds, and
-every verbatim role prompt are in `references/review.md` — **load it before
-reviewing.**
+in sequence within a single turn** — the "5 lenses" framing is conceptual, not a
+multi-agent runtime. The per-phase JSON is internal scratch; by default you
+deliver only the **review letter** and the **scorecard table**. The full
+pipeline, the five lenses, the **paper-type → standard mapping** (CONSORT,
+STROBE, PRISMA, COREQ, validity typology, Toulmin, NIH), the score/priority
+calibration, the draft-level tones, the verdict thresholds, the transparency &
+ethics flags, and every verbatim role prompt are in `references/review.md` —
+**load it before reviewing.**
 
 ## How to run it
 
@@ -52,14 +54,21 @@ reviewing.**
    (Stage is the #1 failure mode: never judge a student essay like a journal
    submission.)
 2. **Run the six phases** from `references/review.md`:
-   - **Intake** → triage the draft (type, field, thesis, sections, gaps).
-   - **Specialist panel ×5** → each critiques from ONE lens, scores 0–10, lists
-     issues anchored to quotes. Apply the score + priority calibration exactly —
-     a competent draft scores 7–8, "high" priority is only for real blockers.
+   - **Intake** → triage the draft (field, thesis, sections, gaps) AND **classify
+     the `paper_type`** (experimental_trial / observational / systematic_review /
+     qualitative / model_study / theoretical / literature_review /
+     essay_argumentative / research_proposal …) so the right methodological
+     standard is applied.
+   - **Specialist panel ×5** → each critiques from ONE lens (Significance · Rigor
+     & Validity · Evidence · Argument · Clarity), scores 0–10, lists issues
+     anchored to quotes. The **Rigor lens applies the type-matched checklist**
+     (e.g. STROBE for an observational study). Apply the score + priority
+     calibration exactly — a competent draft scores 7–8, "high" priority is only
+     for real blockers.
    - **Rebuttal round** → each specialist concurs / dissents / nuances the
      others. Genuinely push back on weak issues; don't rubber-stamp.
-   - **Moderator** → merge both rounds, dedupe, surface contradictions, rank the
-     top issues.
+   - **Moderator** → merge both rounds, dedupe, surface contradictions + any
+     material transparency/ethics flag, rank the top issues.
    - **Chief editor** → write the review letter (Verdict / Strengths / Issues to
      Fix / Optional Improvements), length-scaled to the draft.
    - **Scorecard** → dimension scores, overall mean, verdict by the literal
@@ -89,36 +98,42 @@ unless the user asks for the detail.
 
 ## Scorecard
 
-| Structure | Argument | Evidence | Language | Originality | Overall | Verdict |
+| Significance | Rigor | Evidence | Argument | Clarity | Overall | Verdict |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | <n>/10 | <n>/10 | <n>/10 | <n>/10 | <n>/10 | **<n.n>/10** | **<Accept / Minor Revision / Major Revision / Reject>** |
 
 *<one-line summary of the verdict, ≤25 words>*
 
-*Reviewed from 5 independent lenses (structure · argument · evidence · language · originality), cross-checked against each other — ask to see the full panel.*
+*Appraised as a **<paper type>** against **<standard, e.g. STROBE>** · 5 lenses (significance · rigor · evidence · argument · clarity), cross-checked against each other — ask to see the full panel.*
 ```
 
-- The five score columns map to the five lenses in order: Structure = Structural
-  Editor, Argument = Argument Analyst, Evidence = Evidence Auditor, Language =
-  Language & Style Editor, Originality = Originality & Contribution Critic.
+- The five score columns map to the five lenses in order: Significance =
+  Significance & Originality, Rigor = Rigor & Validity, Evidence = Evidence &
+  Grounding, Argument = Argument & Structure, Clarity = Clarity & Style.
 - **Overall** = the mean of the five dimension scores, rounded to one decimal.
 - **Verdict** = apply the draft-stage rubric in `references/review.md` literally;
   the same verdict word must appear in the `# Verdict` prose and the table.
+- The footer names the **paper type and the standard applied** (per the mapping
+  in `references/review.md`) so the appraisal is traceable. For a theory paper or
+  essay, name "Toulmin / argument quality" and apply no methods checklist.
 - Keep the seven columns in this order; per-lens `severity` stays internal.
 - **Localize to the output language.** All headings, the column names, and the
   verdict word must be in the user's language — a Chinese review uses
   `# 裁决 / # 优点 / # 待修问题 / # 可选改进`, columns
-  `结构 / 论证 / 证据 / 语言 / 原创性 / 总分 / 结论`, and a verdict like **大修**
+  `重要性 / 严谨性 / 证据 / 论证 / 清晰度 / 总分 / 结论`, and a verdict like **大修**
   (Major Revision) / **小修** / **接受** / **拒稿**. Don't leave an English-only
   table inside a Chinese letter.
 
 ## Why the structure matters
 
 The value isn't one model's hot take — it's five independent lenses that then
-*challenge each other* before a moderator reconciles them. The rebuttal round
-is what kills plausible-but-wrong issues and sharpens the real ones, and the
-draft-level calibration is what keeps the verdict fair. Don't collapse it into a
-single pass; the separation is the product.
+*challenge each other* before a moderator reconciles them, with the
+methodological criteria anchored to the **right standard for the paper type**
+(CONSORT, STROBE, PRISMA, COREQ, the validity typology, Toulmin) rather than a
+generic checklist. The rebuttal round kills plausible-but-wrong issues and
+sharpens the real ones; the draft-level calibration keeps the verdict fair; the
+type-aware standard is what makes the methods critique credible. Don't collapse
+it into a single pass; the separation is the product.
 
 ## Honesty contract
 

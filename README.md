@@ -27,7 +27,9 @@
 
 ## ✨ What it does
 
-🧪 **A whole panel's scrutiny, from one model** — your draft is examined through five independent review lenses (structure, argument, evidence, language, originality) that then **challenge each other** in a rebuttal round before a moderator reconciles them. That cross-examination is what kills plausible-but-wrong feedback and sharpens what's real.
+🧪 **A whole panel's scrutiny, from one model** — your draft is examined through five independent review lenses (significance, rigor, evidence, argument, clarity) that then **challenge each other** in a rebuttal round before a moderator reconciles them. That cross-examination is what kills plausible-but-wrong feedback and sharpens what's real.
+
+🔬 **Judged by the right standard** — the methodology critique adapts to what you actually wrote: an observational study is checked against **STROBE**, a systematic review against **PRISMA + AMSTAR-2**, a trial against **CONSORT**, a qualitative study against **COREQ**, a proposal against **NIH** criteria, an essay against the **Toulmin** model of argument — not one generic checklist for everything.
 
 📊 **A verdict with a number** — you get a referee letter (verdict, strengths, issues to fix, optional improvements) *and* a scorecard: each dimension scored 0–10, an overall, and a recommendation — **Accept / Minor / Major Revision / Reject**.
 
@@ -52,11 +54,12 @@ You said it's a working draft — so it reviews straight away (no forms; it note
 > **Replace the sole metric** — lines-of-code rewards verbosity and ignores correctness; add a validated outcome (task completion, tests passed, time-on-task).
 > **Ground it in prior work** — there are no citations anywhere; add a short related-work paragraph.
 
-| Structure | Argument | Evidence | Language | Originality | Overall | Verdict |
+| Significance | Rigor | Evidence | Argument | Clarity | Overall | Verdict |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| 6 | 4 | 3 | 6 | 5 | **4.8/10** | **Major Revision** |
+| 6 | 3 | 3 | 6 | 6 | **4.8/10** | **Major Revision** |
 
 > *A relevant question undermined by a confirmation-seeking design; not ready until the metric and controls are fixed.*
+> *Appraised as a research proposal against NIH criteria (Significance · Innovation · Approach) · 5 lenses cross-checked.*
 
 <br>
 
@@ -82,6 +85,7 @@ Six phases — **intake → 5 lenses → rebuttal round → moderator → editor
 |---|:---:|:---:|
 | ⚡ **Speed** | minutes (one Claude pass) | faster — streamed, parallel panel |
 | Six-phase panel + scored verdict | ✅ | ✅ |
+| Standards by paper type (STROBE / PRISMA / CONSORT / COREQ / Toulmin) | ✅ | ✅ |
 | Stage-aware calibration | ✅ | ✅ |
 | Find & read the literature it asks for | bring your own | ✅ end-to-end |
 | Saved drafts & revision history | — | ✅ |
