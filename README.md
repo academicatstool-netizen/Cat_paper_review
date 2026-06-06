@@ -13,7 +13,7 @@
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-FF7A45.svg)](LICENSE)
-&nbsp;[![Runs on Claude](https://img.shields.io/badge/runs%20on-Claude-FF7A45.svg)](https://claude.com/claude-code)
+&nbsp;[![Runs on](https://img.shields.io/badge/runs%20on-Claude%20%7C%20ChatGPT%20%7C%20DeepSeek-FF7A45.svg)](https://claude.com/claude-code)
 &nbsp;[![Full product](https://img.shields.io/badge/full%20product-academicats.com-FF7A45.svg)](https://academicats.com)
 
 </div>
@@ -21,7 +21,7 @@
 ---
 
 > ### 🪶 This is the **lite, open-source edition** of [**AcademiCats**](https://academicats.com) — now in free open beta
-> The full product at **[academicats.com](https://academicats.com)** is an AI research workbench that takes you from *finding* papers through *reading, writing, and self-review*. This skill is a free, self-contained slice of the review workflow you can run on your own Claude.
+> The full product at **[academicats.com](https://academicats.com)** is an AI research workbench that takes you from *finding* papers through *reading, writing, and self-review*. This skill is a free, self-contained slice of the review workflow you can run on your own AI — Claude, ChatGPT, or DeepSeek.
 
 ---
 
@@ -90,7 +90,7 @@ Six phases — **intake → 5 lenses → rebuttal round → moderator → editor
 
 |  | Paper Review (this skill) | [AcademiCats full product →](https://academicats.com) |
 |---|:---:|:---:|
-| ⚡ **Speed** | minutes (one Claude pass) | faster — streamed, parallel panel |
+| ⚡ **Speed** | minutes (one model pass) | faster — streamed, parallel panel |
 | Six-phase panel + scored verdict | ✅ | ✅ |
 | Standards by paper type (STROBE / PRISMA / CONSORT / COREQ / Toulmin) | ✅ | ✅ |
 | Stage-aware calibration | ✅ | ✅ |

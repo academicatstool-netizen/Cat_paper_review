@@ -13,7 +13,7 @@
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-FF7A45.svg)](LICENSE)
-&nbsp;[![Runs on Claude](https://img.shields.io/badge/运行于-Claude-FF7A45.svg)](https://claude.com/claude-code)
+&nbsp;[![Runs on](https://img.shields.io/badge/运行于-Claude%20%7C%20ChatGPT%20%7C%20DeepSeek-FF7A45.svg)](https://claude.com/claude-code)
 &nbsp;[![Full product](https://img.shields.io/badge/完整产品-academicats.com-FF7A45.svg)](https://academicats.com)
 
 </div>
@@ -21,7 +21,7 @@
 ---
 
 > ### 🪶 这是 [**AcademiCats**](https://academicats.com) 的**开源轻量版**（正式版现处公测，免费试用）
-> 完整产品在 **[academicats.com](https://academicats.com)** —— 一个 AI 研究工作台，带你从*找文献*一路走到*读、写、自审*。本 skill 把其中的评审部分免费开源，自包含、可直接在你自己的 Claude 上运行。
+> 完整产品在 **[academicats.com](https://academicats.com)** —— 一个 AI 研究工作台，带你从*找文献*一路走到*读、写、自审*。本 skill 把其中的评审部分免费开源，自包含、可直接在你自己的 AI 上运行——Claude、ChatGPT 或 DeepSeek 皆可。
 
 ---
 
@@ -90,7 +90,7 @@ git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/ski
 
 |  | 模拟同行评审（本 skill） | [AcademiCats 完整产品 →](https://academicats.com) |
 |---|:---:|:---:|
-| ⚡ **速度** | 几分钟（单个 Claude 一遍生成） | 更快 —— 流式 + 并行评审团 |
+| ⚡ **速度** | 几分钟（单个模型一遍生成） | 更快 —— 流式 + 并行评审团 |
 | 六阶段评审团 + 评分裁决 | ✅ | ✅ |
 | 按论文类型挂标准（STROBE / PRISMA / CONSORT / COREQ / Toulmin） | ✅ | ✅ |
 | 按稿件阶段校准 | ✅ | ✅ |
