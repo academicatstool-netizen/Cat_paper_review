@@ -80,6 +80,8 @@ Restart Claude Code, then just ask — *"review my draft, it's a working draft o
 
 **💬 DeepSeek / any other model** — paste **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** as the **system prompt** (or first message). Then paste your draft.
 
+> ✅ **No web access needed** — Paper Review is pure reasoning, so it runs fully on any model, online or off. It reviews the draft you paste; it never needs to look anything up.
+
 <br>
 
 ## 💙 What's inside

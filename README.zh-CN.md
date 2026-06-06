@@ -80,6 +80,8 @@ git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/ski
 
 **💬 DeepSeek / 任意其他模型** —— 把 **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** 作为**系统提示**（或第一条消息）粘贴，然后把草稿贴给它。
 
+> ✅ **无需联网** —— 模拟同行评审是纯推理，任何模型上都能完整运行（在线离线都行）。它只评审你粘贴的草稿，不需要联网查任何东西。
+
 <br>
 
 ## 💙 内部构造
