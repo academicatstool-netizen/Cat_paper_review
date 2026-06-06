@@ -91,6 +91,15 @@ Six phases — **intake → 5 lenses → rebuttal round → moderator → editor
 | Saved drafts & revision history | — | ✅ |
 | Polished web & mobile app | — | ✅ |
 
+## 🌐 Use it on ChatGPT, DeepSeek, or any model
+
+This skill loads automatically on **Claude** (Claude Code & claude.ai). To run the same thing on **ChatGPT, DeepSeek, or any other capable LLM**, use the self-contained prompt in **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** — it inlines everything, with no files to load and no Claude-specific assumptions.
+
+- **ChatGPT** — paste it into a **Custom GPT**'s *Instructions*, or simply send it as your first message in a normal chat.
+- **DeepSeek & others** — paste it as the **system prompt**, or as the first message of the conversation.
+
+Then just describe your task in the same chat. Quality is best on frontier models (Claude Sonnet/Opus, GPT‑4o/o‑series, DeepSeek‑V3/R1).
+
 ## 🐱 The AcademiCats skill family
 
 Three open skills that chain into one research workflow — install any or all:

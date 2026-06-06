@@ -91,6 +91,15 @@ git clone https://github.com/jy1529098645-gif/Cat_paper_review.git ~/.claude/ski
 | 草稿保存与修订历史 | — | ✅ |
 | 精致的网页与移动端 | — | ✅ |
 
+## 🌐 在 ChatGPT、DeepSeek 或任意模型上使用
+
+本 skill 在 **Claude**（Claude Code 与 claude.ai）上会自动加载。想在 **ChatGPT、DeepSeek 或任何其他够强的大模型**上跑同一套能力，用 **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** 里的自包含提示词——它已把全部内容内联，无需加载任何文件，也不含 Claude 专有假设。
+
+- **ChatGPT** —— 贴进**自定义 GPT** 的 *Instructions*，或直接作为普通对话的第一条消息发送。
+- **DeepSeek 及其他** —— 作为**系统提示**，或对话的第一条消息粘贴。
+
+然后在同一对话里描述你的任务即可。用前沿模型（Claude Sonnet/Opus、GPT‑4o/o 系列、DeepSeek‑V3/R1）效果最好。
+
 ## 🐱 AcademiCats 技能家族
 
 三个开源 skill，串起一条完整的研究工作流——按需安装其一或全部：
