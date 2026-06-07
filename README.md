@@ -13,7 +13,9 @@
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-FF7A45.svg)](LICENSE)
-&nbsp;[![Runs on](https://img.shields.io/badge/runs%20on-Claude%20%7C%20ChatGPT%20%7C%20DeepSeek-FF7A45.svg)](https://claude.com/claude-code)
+&nbsp;[![Claude](https://img.shields.io/badge/Claude-FF7A45.svg)](https://claude.com/claude-code)
+&nbsp;[![ChatGPT](https://img.shields.io/badge/ChatGPT-FF7A45.svg)](https://chatgpt.com)
+&nbsp;[![DeepSeek](https://img.shields.io/badge/DeepSeek-FF7A45.svg)](https://chat.deepseek.com)
 &nbsp;[![Full product](https://img.shields.io/badge/full%20product-academicats.com-FF7A45.svg)](https://academicats.com)
 
 </div>
