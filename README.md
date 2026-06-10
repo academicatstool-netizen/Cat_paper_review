@@ -102,13 +102,14 @@ Six phases — **intake → 5 lenses → rebuttal round → moderator → editor
 
 ## 🐱 The AcademiCats skill family
 
-Three open skills that chain into one research workflow — install any or all:
+Four open skills that chain into one research workflow — install any or all:
 
+- 🧭 [Find Angles](https://github.com/academicatstool-netizen/Cat_find_angles) — turn a topic into research directions
 - 🔍 [Paper Search](https://github.com/academicatstool-netizen/Cat_paper_search) — find & read papers
 - ✍️ [Synthesis Lab](https://github.com/academicatstool-netizen/Cat_synthesis_lab) — write grounded papers from your sources
 - 🧪 **Paper Review** *(you are here)* — peer-review your own draft
 
-**Install all three at once** — clone any one repo, then run `bash install.sh`.
+**Install all at once** — clone any one repo, then run `bash install.sh`.
 
 ## 🙋 FAQ
 

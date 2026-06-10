@@ -102,13 +102,14 @@ git clone https://github.com/academicatstool-netizen/Cat_paper_review.git ~/.cla
 
 ## 🐱 AcademiCats 技能家族
 
-三个开源 skill，串起一条完整的研究工作流——按需安装其一或全部：
+四个开源 skill，串起一条完整的研究工作流——按需安装其一或全部：
 
+- 🧭 [Find Angles](https://github.com/academicatstool-netizen/Cat_find_angles) —— 把主题变成研究方向
 - 🔍 [论文检索](https://github.com/academicatstool-netizen/Cat_paper_search) —— 找文献、读文献
 - ✍️ [文献写作台](https://github.com/academicatstool-netizen/Cat_synthesis_lab) —— 用你的文献写出有据可查的成稿
 - 🧪 **模拟同行评审** *（你在这里）* —— 对你自己的草稿做同行评审
 
-**一次装齐三个** —— clone 任意一个仓库后运行 `bash install.sh`。
+**一次装齐** —— clone 任意一个仓库后运行 `bash install.sh`。
 
 ## 🙋 常见问题
 
