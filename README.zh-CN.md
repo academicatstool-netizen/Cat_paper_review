@@ -14,8 +14,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-FF7A45.svg)](LICENSE)
 &nbsp;[![Claude](https://img.shields.io/badge/Claude-FF7A45.svg)](https://claude.com/claude-code)
-&nbsp;[![ChatGPT](https://img.shields.io/badge/ChatGPT-FF7A45.svg)](https://chatgpt.com)
-&nbsp;[![DeepSeek](https://img.shields.io/badge/DeepSeek-FF7A45.svg)](https://chat.deepseek.com)
+&nbsp;[![Codex](https://img.shields.io/badge/Codex-FF7A45.svg)](https://github.com/openai/codex)
 &nbsp;[![Full product](https://img.shields.io/badge/完整产品-academicats.com-FF7A45.svg)](https://academicats.com)
 
 </div>
@@ -23,7 +22,7 @@
 ---
 
 > ### 🪶 这是 [**AcademiCats**](https://academicats.com) 的**开源轻量版**（正式版现处公测，免费试用）
-> 完整产品在 **[academicats.com](https://academicats.com)** —— 一个 AI 研究工作台，带你从*找文献*一路走到*读、写、自审*。本 skill 把其中的评审部分免费开源，自包含、可直接在你自己的 AI 上运行——Claude、ChatGPT 或 DeepSeek 皆可。
+> 完整产品在 **[academicats.com](https://academicats.com)** —— 一个 AI 研究工作台，带你从*找文献*一路走到*读、写、自审*。本 skill 把其中的评审部分免费开源，自包含、可直接在你自己的 AI 上运行——Claude 或 Codex 皆可。
 
 ---
 
@@ -78,9 +77,9 @@ git clone https://github.com/academicatstool-netizen/Cat_paper_review.git ~/.cla
 
 **🌐 Claude 网页 / 桌面版** —— 下载 **[`paper-review.skill`](paper-review.skill)**，在 **Settings → Capabilities → Skills** 里上传，然后任意对话直接问。
 
-**🤖 ChatGPT** —— 打开 **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)**，贴进**自定义 GPT** 的 *Instructions*（或作为第一条消息发送），然后把草稿贴给它。
+**💻 Codex / 任意编码 agent** —— 克隆仓库，把 agent 指向 **`SKILL.md`**，它会按和 Claude Code 相同的说明运行。纯推理，无需安装。然后把草稿贴给它。
 
-**💬 DeepSeek / 任意其他模型** —— 把 **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** 作为**系统提示**（或第一条消息）粘贴，然后把草稿贴给它。
+**💬 任意其他模型** —— 把 **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** 作为**系统提示**（或第一条消息）粘贴，然后把草稿贴给它。
 
 > ✅ **无需联网** —— 模拟同行评审是纯推理，任何模型上都能完整运行（在线离线都行）。它只评审你粘贴的草稿，不需要联网查任何东西。
 
@@ -113,10 +112,10 @@ git clone https://github.com/academicatstool-netizen/Cat_paper_review.git ~/.cla
 
 ## 🙋 常见问题
 
-- **这些文件都是干嘛的？** 上面几种方式用其一即可——git clone（Claude Code）、`.skill` 文件（Claude 网页/桌面）、或 `PORTABLE_PROMPT.md`（ChatGPT/DeepSeek）。`SKILL.md`、`references/` 是助手自动加载的内部文件，无需手动打开。
+- **这些文件都是干嘛的？** 上面几种方式用其一即可——git clone（Claude Code）、`.skill` 文件（Claude 网页/桌面）、或 `PORTABLE_PROMPT.md`（任意其他模型）。`SKILL.md`、`references/` 是助手自动加载的内部文件，无需手动打开。
 - **没触发？** 安装后重启 Claude Code，并把话说成一个任务 —— *"帮我审这份草稿…"*。
 - **记得说明稿件阶段。** 告诉它是*"在写稿"、"终稿"、"草图"*还是*"学生作业"*，它才会公平打分——课程作业不该用期刊投稿的标准来评。
-- **用哪个模型？** 任何够强的模型都行——Claude Sonnet/Opus、GPT‑4o/o 系列、DeepSeek‑V3/R1 效果最好。
+- **用哪个模型或 agent？** Claude（Sonnet/Opus）配 Claude Code 或 Codex 效果最好——任何其他够强的模型都能用便携提示运行。
 - **隐私 & 免费？** 全程跑在你自己的 AI 上——无需账号、不向我们回传任何东西。
 
 <div align="center">

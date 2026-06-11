@@ -14,8 +14,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-FF7A45.svg)](LICENSE)
 &nbsp;[![Claude](https://img.shields.io/badge/Claude-FF7A45.svg)](https://claude.com/claude-code)
-&nbsp;[![ChatGPT](https://img.shields.io/badge/ChatGPT-FF7A45.svg)](https://chatgpt.com)
-&nbsp;[![DeepSeek](https://img.shields.io/badge/DeepSeek-FF7A45.svg)](https://chat.deepseek.com)
+&nbsp;[![Codex](https://img.shields.io/badge/Codex-FF7A45.svg)](https://github.com/openai/codex)
 &nbsp;[![Full product](https://img.shields.io/badge/full%20product-academicats.com-FF7A45.svg)](https://academicats.com)
 
 </div>
@@ -23,7 +22,7 @@
 ---
 
 > ### 🪶 This is the **lite, open-source edition** of [**AcademiCats**](https://academicats.com) — now in free open beta
-> The full product at **[academicats.com](https://academicats.com)** is an AI research workbench that takes you from *finding* papers through *reading, writing, and self-review*. This skill is a free, self-contained slice of the review workflow you can run on your own AI — Claude, ChatGPT, or DeepSeek.
+> The full product at **[academicats.com](https://academicats.com)** is an AI research workbench that takes you from *finding* papers through *reading, writing, and self-review*. This skill is a free, self-contained slice of the review workflow you can run on your own AI — Claude or Codex.
 
 ---
 
@@ -78,9 +77,9 @@ Restart Claude Code, then just ask — *"review my draft, it's a working draft o
 
 **🌐 Claude (web / desktop app)** — download **[`paper-review.skill`](paper-review.skill)**, then upload it under **Settings → Capabilities → Skills**. Ask in any chat.
 
-**🤖 ChatGPT** — open **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** and paste it into a **Custom GPT**'s *Instructions* (or just send it as your first message). Then paste your draft.
+**💻 Codex / any coding agent** — clone the repo and point the agent at **`SKILL.md`**; it follows the same instructions as Claude Code. Pure reasoning, nothing to install. Then paste your draft.
 
-**💬 DeepSeek / any other model** — paste **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** as the **system prompt** (or first message). Then paste your draft.
+**💬 Any other model** — paste **[`PORTABLE_PROMPT.md`](PORTABLE_PROMPT.md)** as the **system prompt** (or first message). Then paste your draft.
 
 > ✅ **No web access needed** — Paper Review is pure reasoning, so it runs fully on any model, online or off. It reviews the draft you paste; it never needs to look anything up.
 
@@ -113,10 +112,10 @@ Four open skills that chain into one research workflow — install any or all:
 
 ## 🙋 FAQ
 
-- **What are all these files?** Use just one path above — a git clone (Claude Code), the `.skill` file (Claude web/desktop), or `PORTABLE_PROMPT.md` (ChatGPT/DeepSeek). `SKILL.md` and `references/` are internals your assistant loads for you — no need to open them.
+- **What are all these files?** Use just one path above — a git clone (Claude Code), the `.skill` file (Claude web/desktop), or `PORTABLE_PROMPT.md` (any other model). `SKILL.md` and `references/` are internals your assistant loads for you — no need to open them.
 - **It didn't trigger?** Restart Claude Code after installing, and phrase your message as a task — *"review my draft …"*.
 - **Tell it the draft stage.** Say it's a *"working draft"*, *"final"*, *"rough sketch"*, or *"student essay"* so it grades you fairly — a class essay shouldn't be judged like a journal submission.
-- **Which model?** Any strong model works — Claude Sonnet/Opus, GPT‑4o/o‑series, or DeepSeek‑V3/R1 give the best results.
+- **Which model or agent?** Claude (Sonnet/Opus) via Claude Code or Codex give the best results — any other capable model can run the portable prompt.
 - **Private & free?** It runs on your own AI — no account, nothing sent to us.
 
 <div align="center">
