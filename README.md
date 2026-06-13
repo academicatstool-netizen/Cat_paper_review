@@ -64,6 +64,16 @@ You said it's a working draft — so it reviews straight away (no forms; it note
 
 <br>
 
+## 🔬 Why you can trust it
+
+Feedback you can't trust is just flattery — so this repo ships proof, not just claims:
+
+- **[Generic AI vs. Paper Review →](examples/)** — the same flawed draft, showing how a generic chatbot hands out vague praise and an 8/10 while missing the fatal flaw, versus the standards-grounded critique this skill returns.
+- **[How the review works →](METHODOLOGY.md)** — the five lenses, the real reporting standards it applies per paper type (STROBE, CONSORT, PRISMA, COREQ, Toulmin, NIH), and how the score is calibrated to your draft stage.
+- **[Known limitations →](LIMITATIONS.md)** — the failure cases we know about, written down. It assists peer review; it doesn't replace it.
+
+<br>
+
 ## 🚀 Get started — pick your platform
 
 Pick whichever AI you use; each setup takes under a minute.
